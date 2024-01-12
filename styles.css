@@ -1,3 +1,122 @@
+* { 
+ margin: 0; 
+ padding: 0; 
+ box-sizing: border-box; 
+} 
+
 body {
-	background-color: blue;
+	background-color:powderblue;
+}
+
+/*Makes for more appealing scrolling when clicking on navbar links*/
+html {
+	scroll-behavior: smooth;
+}
+
+/*Helping to style the navigation bar*/
+.navigation-bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+/*Making name section of nav bar larger*/
+#my-name {
+	font-size: 25px;
+}
+
+li {
+	float: left;
+}
+
+/*Style for nav bar*/
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/*Change the link color to black on hover for nav bar*/
+
+li a:hover{
+	background-color: #111;
+}
+
+#image-container {
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+#Backgroundimg {
+	width: 100%;
+	height: 100%;
+}
+
+#ProfHeadshot {
+	position: absolute;
+	display: block;
+	margin-left: 42%;
+	margin-right: auto;
+	margin-top: 5%;
+	width: 16%;
+	height: 32%;
+	border-radius: 50%;
+	border: 10px solid #FFFFFF;
+}
+
+/*Make the name for the images centered*/
+#Top-name {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+{
+	box-sizing: border-box;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 28% 42%;
+    gap: 20px;
+	justify-content: center;
+}
+
+.Image-section {
+    background-color: salmon;
+}
+
+.Text-section {
+	background-color: salmon;
+}
+
+#SupCourtImg {
+	position: absolute;
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 8px solid #FFFFFF;
+}
+
+.Skills-container {
+	display: grid;
+	grid-template-columns: 20% 20% 20%  ;
+	grid-template-rows: 300px 300px;
+	gap: 20px;
+	justify-content: center;
+}
+
+#Skills-heading {
+	text-align: center;
 }
