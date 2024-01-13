@@ -23,6 +23,9 @@ html {
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 /*Making name section of nav bar larger*/
@@ -58,6 +61,10 @@ li a:hover{
 #Backgroundimg {
 	width: 100%;
 	height: 100%;
+}
+
+.About-Me-Container {
+	padding-top: 50px;
 }
 
 #ProfHeadshot {
@@ -111,12 +118,45 @@ li a:hover{
 
 .Skills-container {
 	display: grid;
-	grid-template-columns: 20% 20% 20%  ;
+	grid-template-columns: 20% 20% 20%;
 	grid-template-rows: 300px 300px;
-	gap: 20px;
+	grid-row-gap: 20px;
+	grid-column-gap:20px;
 	justify-content: center;
 }
 
+
 #Skills-heading {
 	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 180px;
+}
+
+div.gallery.hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.Description {
+	padding: 15px;
+}
+
+.Projects-container {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-template-rows: 400px 400px;
+	grid-row-gap: 20px;
+	grid-column-gap:20px;
+	justify-content: center;
 }
