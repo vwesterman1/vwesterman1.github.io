@@ -1,11 +1,12 @@
 * { 
  margin: 0; 
  padding: 0; 
- box-sizing: border-box; 
+ box-sizing: border-box;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 } 
 
 body {
-	background-color:powderblue;
+	background-color: #D5F9FF;
 }
 
 /*Makes for more appealing scrolling when clicking on navbar links*/
@@ -13,49 +14,52 @@ html {
 	scroll-behavior: smooth;
 }
 
-/*Helping to style the navigation bar*/
-.navigation-bar {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-	position: fixed;
-	width: 100%;
-	z-index: 9999;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+#navbar {
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
 }
 
-/*Making name section of nav bar larger*/
-#my-name {
-	font-size: 25px;
+#navbar.scrolled {
+    backdrop-filter: blur(30px);
 }
 
-li {
-	float: left;
+#ul-navbar {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    width: fit-content;
+    margin: 0px auto auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/*Style for nav bar*/
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+.li-navbar {
+    background-color: transparent;
+    float: left;
 }
 
-/*Change the link color to black on hover for nav bar*/
-
-li a:hover{
-	background-color: #111;
+.li-navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-#image-container {
-	position: relative;
-	text-align: center;
-	width: 100%;
+.li-navbar a:hover {
+    color: #ccc;
+}
+	
+#Name-title {
+	font-size: 150%;
+	margin-right: 200px;
+	font-weight: bold;
+	color: #A3D197;
 }
 
 #Backgroundimg {
@@ -63,8 +67,14 @@ li a:hover{
 	height: 100%;
 }
 
+#About-heading {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
 .About-Me-Container {
-	padding-top: 50px;
+	padding-top: 75px;
+	padding-bottom: 100px;
 }
 
 #ProfHeadshot {
@@ -86,6 +96,8 @@ li a:hover{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
+	font-size: 65px;
+	font-weight: bold;
 }
 
 {
@@ -100,36 +112,51 @@ li a:hover{
 }
 
 .Image-section {
-    background-color: salmon;
+    background-color: #D5F9FF;
+	align-items: center;
+	justify-content: center;
 }
 
 .Text-section {
-	background-color: salmon;
+	background-color: #D5F9FF;
+	line-height: 1.75;
 }
 
 #SupCourtImg {
-	position: absolute;
 	display: block;
-	width: 150px;
-	height: 150px;
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
 	border: 8px solid #FFFFFF;
+	margin: auto;
+}
+
+.All-Skills {
+	background-color: #196B98;
+	color: #FFFFFF;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .Skills-container {
 	display: grid;
 	grid-template-columns: 20% 20% 20%;
-	grid-template-rows: 300px 300px;
+	grid-template-rows: 375px 475px;
 	grid-row-gap: 20px;
-	grid-column-gap:20px;
+	grid-column-gap: 45px;
 	justify-content: center;
+	text-align: center;
+	line-height: 1.5;
 }
 
 
 #Skills-heading {
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	color: white;
+	font-size: 65px;
+	font-weight: bold;
 }
 
 div.gallery {
@@ -137,6 +164,7 @@ div.gallery {
 	border: 1px solid #ccc;
 	float: left;
 	width: 180px;
+	text-align: center;
 }
 
 div.gallery.hover {
@@ -152,11 +180,90 @@ div.Description {
 	padding: 15px;
 }
 
+
 .Projects-container {
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
-	grid-template-rows: 400px 400px;
+	grid-template-rows: 550px 450px;
 	grid-row-gap: 20px;
 	grid-column-gap:20px;
+	align-items: center;
 	justify-content: center;
+}
+
+.Project-title {
+	margin-bottom: 10px;
+}
+
+.circle {
+	height: 100px;
+	width: 100px;
+	background-color: #BDF6FF;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+#Papers-heading{
+	text-align: center;
+	background-color: #196B98;
+	color: #FFFFFF;
+	padding-bottom: 50px;
+}
+
+.Papers-header{
+	padding-top: 50px;
+	padding-bottom: 75px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	
+.All-Projects {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	line-height: 1.5;
+	margin-bottom: 75px;
+}
+
+#Projects-heading {
+	padding-top: 50px;
+	padding-bottom: 75px;
+	font-size: 65px;
+	font-weight: bold;
+}
+
+.skill-info {
+	margin-top: 5px;
+}
+
+ul.Com-Coll {
+	list-style-type: circle;
+}
+
+ul.Uni {
+	list-style-type: circle;
+}
+
+.s3 {
+	margin-bottom: 12px;
+}
+
+.Description {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.Contact-section {
+	padding-top: 50px;
+	padding-bottom: 65px;
+	text-align: center;
 }

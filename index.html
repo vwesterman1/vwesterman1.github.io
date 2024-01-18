@@ -13,18 +13,17 @@
 
 <body>
 <!--Creating the navigation bar-->
-	<div>
-		<ul class="navigation-bar">
-			<li id="my-name"><a href="#">Victoria Westerman</a></li>
-			<li><a href="#About-heading">About</a></li>
-			<li><a href="#Skills-heading">Skills</a></li>
-			<li><a href="#Projects-heading">Projects</a></li>
-			<li><a href="#Papers-heading">Papers</a></li>
-			<li><a href="#Contact-heading">Contact</a></li>
-		</ul>
-	</div>
+	<div id="navbar">
+		<ul id="ul-navbar">
+			<li class="li-navbar" id="Name-title"><a href="#">Victoria Westerman</a></li>
+			<li class="li-navbar"><a href="#About-heading">ABOUT</a></li>
+            <li class="li-navbar"><a href="#Skills-heading">SKILLS</a></li>
+            <li class="li-navbar"><a href="#Projects-heading">PROJECTS</a></li>
+            <li class="li-navbar"><a href="#Papers-heading">PAPERS</a></li>
+            <li class="li-navbar"><a href="#Contact-heading">CONTACT</a></li>
+        </ul>
+    </div>
 
-</head>
 	
 <!--Code for the professional picture-->
 	<div id="image-container">
@@ -37,27 +36,40 @@
 	<div class="About-Me-Container">
 		<div class="info-container">
 			<div class="Image-section">
-				<h2 id="About-heading">Victoria Westerman</h2>
 				<img id="SupCourtImg" src="SC Picture.jpg" alt"Photo of Victoria Westerman in front of the US Supreme Court" />
 			</div>
 			<div class="Text-section">
-				<h3>Student at UMD majoring in Environmental Science and Policy with a concentration in land use.</h3>
-				<p>
-				I am in my senior year at Maryland and I have a strong passion for environmental science, policy, law, and justice.
+				<h2 id="About-heading">Victoria Westerman</h2>
+					<h3 class="s3">
+						Student at UMD majoring in Environmental Science and Policy 
+					</h3>
+				<p class="s3">
+				I am in my senior year at Maryland and I have a strong passion for environmental science,
 				<br>
-				My interests include local and global environmental justice issues, subjects surrounding climate change, as well as the sphere of environmental law and policy.
+				policy, law, and justice. My interests include local and global environmental justice issues,
 				<br>
-				I'm currently in my final semester at the University of Maryland in search of employment opportunities within the field.
+				subjects surrounding climate change, as well as the sphere of environmental law and policy.
+				<br>
+				</p>
+				<p class="s3">
+				I'm currently in my final semester at the University of Maryland in search of employment 
+				<br>
+				opportunities within the field.
 				</p>
 				<h3>Harford Community College</h3>
-				<h4><p>Associates of Arts and Sciences in Political Science</p></h4>
+					<ul class="Com-Coll" style="padding-left:30px">
+					<li><p>Associates of Arts and Sciences in Political Science</p></li>
+					</ul>
 				<h3>University of Maryland</h3>
-				<h4><p>Bachelors of Science in Environmental Science and Policy with a concentration in land use</p></h4> 
+					<ul class="Uni" style="padding-left:30px">
+					<li><p>Bachelors of Science in Environmental Science and Policy with a concentration in land use</p></li>
+					</ul>
 			</div>
 		</div>
 	</div>
 	
 <!--Creating header and list content for the skills section-->
+	<div class="All-Skills">
 	<div>
 			<h2 id="Skills-heading">Skills</h2>
 	</div>
@@ -65,151 +77,197 @@
 		<!--Listing and explaining my first skill-->
 			<div class="Skill-1">
 			
+			<!--Making the ArcGIS logo-->	
+			<div class="logo-container">
+				<div class="circle">
+					<div class="logo">
+						<img src="ArcGIS logo.png" alt="ArcGIS logo" style="width: 40px; height: 40px;">
+					</div>
+				</div>
+			</div>
+			
 				<h3>ArcGIS Pro and ArcMap</h3>
 					
-					<p>Explain getting to use both in academic courses as well as at my internship with MDE</p>
+					<p class="skill-info">Throughout my coursework at University of Maryland and my personal research, I have had extensive experience using both ArcGIS Pro and ArcMap. Through my work on the maps displayed below and other projects, I have continued to improve on my technical skills such as spatial data manipulation and data analysis, but I have also built on my cartographic experience.</p>
 					
 			</div>
 			
 		<!--Listing and explaining my second skill-->
 			<div class="Skill-2">
 			
-				<h3>R and R Studio</h3>
+			<!--Making the R Studio logo-->
+			<div class="logo-container">
+				<div class="circle">
+					<div class="logo">
+						<img src="AutoCAD logo.png" alt="ArcGIS logo" style="width: 40px; height: 40px;">
+					</div>
+				</div>
+			</div>
+			
+				<h3>AutoCAD</h3>
 				
-					<p>Mention taking GEOG306 and BSCI161 Lab, both of which used R for statistical analyses in different circumstances. Also mention using R with stream restoration data at MDE.</p>
-
+					<p class="skill-info">Having gone to a technical high school and specializing in CADD, I have over 4 years of experience using the AutoCAD Software. This knowledge was useful during my internship with MDE when visiting and analyzing stream restoration sites, which gave me the opportunity to further develop my skills with AutoCAD.<p>
+					
 			</div>
 			
 		<!--Listing and explaining my third skill-->
 			<div class="Skill-3">
 			
-				<h3>QGIS Software</h3>
+			<!--Making the QGIS logo-->
+			<div class="logo-container">
+				<div class="circle">
+					<div class="logo">
+						<img src="Geomatica logo.png" alt="ArcGIS logo" style="width: 40px; height: 40px;">
+					</div>
+				</div>
+			</div>
+			
+				<h3>Geomatica Software</h3>
 				
-					<p>Explain projects that have been made using this software and skills that I know how to do in the software from GEOG272.</p>
+					<p class="skill-info">Through classes like Intro to Earth Observation, my experience with Geomatica allowed me to develop many of my core skills such as data evaluation, visualization, modeling, and analysis. This background has prepared me to better solve a wide variety of spatial challenges, which I make use of in all of my work.</p>
 				
 			</div>
 			
 		<!--Listing and explaining my fourth skill-->
 			<div class="Skill-4">
 			
-				<h3>AutoCAD</h3>
+			<!--Making the AutoCAD logo-->
+			<div class="logo-container">
+				<div class="circle">
+					<div class="logo">
+					<img src="R Studio logo.png" alt="ArcGIS logo" style="width: 40px; height: 40px;">
+					</div>
+				</div>
+			</div>
+			
+				<h3>R and R Studio</h3>
 				
-					<p>Discuss having gone to Harford Tech, the skills gained from my 4 years there and any projects finished.<p>
+					<p class="skill-info">Through classes such as Intro to Quantitative Methods for the Geographical Sciences and Principles of Ecology and Evolution Lab, I  have become experienced using the software in various contexts, including scientific and statistical calculations. During my internship with MDE, I had the opportunity to put my knowledge to use by creating a program to organize and analyze sets of stream restoration data.</p>
 					
 			</div>
 
 		<!--Listing and explaining my fifth skill-->
-			<div class="Skil-5">
+			<div class="Skill-5">
+			
+			<!--Making the pen logo-->
+			<div class="logo-container">
+				<div class="circle">
+					<div class="logo">
+						<img src="Pen image.png" alt="ArcGIS logo" style="width: 55px; height: 55px;">
+					</div>
+				</div>
+			</div>
 			
 				<h3>Legal and Policy Writing</h3>
 				
-					<p>Talk about classes like ENSP102 and ENSP330 and the memo's written in the classes. Also discuss writing done at MDE and research done at DOJ.</p>
+					<p class="skill-info">Through my internships with MDE and DOJ as well as courses such as Intro to Environmental Law and Intro to Environmental Science and Policy, I have had many opportunities to enhance my writing skills. At MDE, myself and another colleague published a 36 page report which discussed our analyses of stream restoration sites, as well as provide recommendations for future regulation of such projects. At DOJ, I worked on active litigation cases where court hearings and depositions were often analyzed.</p>
 					
 			</div>
 			
 		<!--Listing and explaining sixth skill-->
 			<div class="Skill-6">
 			
+			<!--Making the spanish logo-->
+			<div class="logo-container">
+				<div class="circle">
+					<div class="logo">
+						<img src="Spanish image.png" alt="ArcGIS logo" style="width: 85px; height: 85px;">
+					</div>
+				</div>
+			</div>
+			
+			
 				<h3>Intermediate Spanish Communication</h3>
 				
-					<p>Discuss classes taken since middle school as well as my personal efforts to further my spanish communication skills.</p>
+					<p class="skill-info">Throughout my secondary education, I had several opportunities to further my education by taking Spanish courses.  As I have become a part of more diverse communities and taken additional classes discussing topics such as environmental justice, I continue to recognize the importance of meeting people where they are. Given my desire to work with EJ communities, I continue to enhance my foreign language experience.</p>
 					
 			</div>
 		</div>
 	</div>
+	</div>
 <!--Creating header for the "Projects" section-->
+	<div class="All-Projects">
 	<div> 
 		<h2 id="Projects-heading">Projects</h2>
 	</div>
 	<div class="Projects-container">
 	
 	<div>
-		<h3>The Purple Line and Low-Income Communities</h3>
-		
-			<p>Give brief overview of the map and what it was done for.</p>
+		<h3 class="Project-title">The Purple Line and Low-Income Communities</h3>
 			
 			<div class="Gallery">
 				<a target="_blank" href="The Purple Line and Low-Income Communities.jpg">
 				<img src="The Purple Line and Low-Income Communities.jpg" alt="Map analyzing the proposed Purple Line and its relation with low-income communities." style="width: 250px; height: 250px;">
 				</a>
-				<div class="Description">Add a description of the project here</div>
+				<div class="Description">As I will discuss further in the paper’s section, a requirement of my major was to complete an internship and to write a research paper. I chose to research the NEPA process of the Purple Line. As I was conducting my research it was evident that social and economic demographics were an important factor to the project. Given this and my background with GIS, I decided to create a map analyzing the relationship between low-income communities and the proposed Purple Line Route.</div>
 			</div>
 	</div>
 	
 	<!--Listing the title of the second project along with an explanation and a file of the project itself.-->
 	<div>
 	
-		<h3>Proposed Locations for New Recycling Facilities in Chatham County, NC</h3>
-		
-			<p>Give brief overview of the map and what it was done for.</p> 
+		<h3 class="Project-title">Proposed Locations for New Recycling Facilities in Chatham County, NC</h3>
 			
 			<div class="Gallery">
 				<a target="_blank" href="New Recycling Facilities in Chatham County, NC.jpg">
 				<img src="New Recycling Facilities in Chatham County, NC.jpg" alt="Map displaying possible locations for a new recylcing facility in Chatham County, North Carolina." style="width: 250px; height: 250px;">
 				</a>
-				<div class="Description">Add a description of the project here</div>
+				<div class="Description">For my Applied Spatial Analysis in ENSP course, myself and group members were challenged to find a situation or issue that could be solved using spatial analysis. We decided to create a suitability map for potential locations of new recycling facilities in Chatham County, North Carolina. Focusing on nearby existing roads, elevation, and location of existing facilities, the map produced displays a scale of suitable locations.</div>
 			</div>
 	</div>
 	
 	<!--Listing the title of the third project along with an explanation and a file of the project itself.-->
 	<div>
 	
-		<h3>Food Sources and Demographics</h3>
-		
-			<p>Give brief overview of the map and what it was done for.</p>
+		<h3 class="Project-title">Food Sources and Demographics</h3>
 			
 			<div class="Gallery">
 				<a target="_blank" href="Food Sources and Demographics.jpg">
 				<img src="Food Sources and Demographics.jpg" alt="Map that visually depicts the relationship between food source and minority communities in Prince George's County, MD." style="width: 250px; height: 250px;">
 				</a>
-				<div class="Description">Add a description of the project here</div>
+				<div class="Description">Focused on the percentage of minority citizens and accessible food sources, this map was created to show the lack of healthy food choices within Prince George’s County. Through this spatial analysis, it was clear that fast food restaurants were significantly more prevalent than farmers markets.</div>
 			</div>
 	</div>
 	
 	<!--Listing the title of the fourth project along with an explanation and a file of the project itself.-->
 	<div>
 	
-		<h3>Deforestation in Rondonia, Brazil</h3>
-		
-			<p>Give brief overview of the map and what it was done for.</p>
+		<h3 class="Project-title">Deforestation in Rondonia, Brazil</h3>
 			
 			<div class="Gallery">
 				<a target="_blank" href="Deforestation in Rondonia.jpg">
 				<img src="Deforestation in Rondonia.jpg" alt="Map visualizing the deforestation that would occur if a proposed road were to be built in Rondonia, Brazil." style="width: 250px; height: 250px;">
 				</a>
-				<div class="Description">Add a description of the project here</div>
+				<div class="Description">This map looked to analyze the environmental impacts (specifically deforestation) that would occur if a proposed road were to be built in Rondonia, Brazil. It was found that an additional 562 square kilometers would be deforested if the road were to be built.</div>
 			</div>
 	</div>
 	
 	<!--Listing the title of the fifth project along with an explanation and a file of the project itself.-->
 	<div>
 	
-		<h3>Bobcat Suitability</h3>
-		
-			<p>Give brief overview of the map and what it was done for</p>
+		<h3 class="Project-title">Bobcat Suitability</h3>
 			
 			<div class="Gallery">
 				<a target="_blank" href="Bobcat Suitability.jpg">
 				<img src="Bobcat Suitability.jpg" alt="Map depicting several viable habitat locations in Vermont for Bobcats based on several factors." style="width: 250px; height: 250px;">
 				</a>
-				<div class="Description">Add a description of the project here</div>
+				<div class="Description">Concerning factors such as food and water access, minimal human contact, and necessary habitat, a suitability map was created for bobcats in Vermont. Each of the different colors displayed shows another acceptable area that could be made into a bobcat refuge.</div>
 			</div>
 	</div>
 	
 	<!--Listing the title of the sixth project along with an explanation and a file of the project itself.-->
 	<div>
 	
-		<h3>Wetland Impacts</h3>
+		<h3 class="Project-title">Wetland Impacts</h3>
 		
-			<p>Give brief overview of the map and what it was done for</p>
-			
 			<div class="Gallery">
 				<a target="_blank" href="Wetland Impacts.jpg">
 				<img src="Wetland Impacts.jpg" alt="Map showing how nearby wetlands would be impacted by the construction of a proposed factory." style="width: 250px; height: 250px;">
 				</a>
-				<div class="Description">Add a description of the project here</div>
+				<div class="Description">This map analyzes the ecological impacts that would be experienced if a proposed factory were to be constructed. Wetlands with a higher wetland rapid assessment protocol (WRAP) score have a greater ecological value to the given ecosystem, meaning that the impact experienced for those may be greater than other identified wetlands.</div>
 			</div>
 	</div>
+</div>
 </div>
 	
 	
@@ -229,7 +287,7 @@
 			</a>
 			</h4>
 		<div class="Description of the paper">
-		For my environmental law class I was assigned a relevant subject in this field and was then expected to write a legal memo to a hypothetical attorney. I was given the overlapping topics of the Due Process Clause and climate change. Using constitutional interpretations and prior case law of cases such as Roe v. Wade and Obergefell v. Hodges, as well as more environmentally related cases like Juliana v. United States, I argued that the Due Process Clause of the Fifth and Fourteenth Amendments can be used to address the harms of climate change. 
+		For my environmental law class I was assigned a topic relevant to environmental law and was then expected to write a legal memo to a hypothetical attorney. I was given the overlapping topics of the Due Process Clause and climate change. Using constitutional interpretations and prior case law of cases such as Roe v. Wade and Obergefell v. Hodges, as well as more environmentally related cases like Juliana v. United States, I argued that the Due Process Clause of the Fifth and Fourteenth Amendments can be used to address the harms of climate change. 
 		</div>
 		</div>
 	
@@ -240,7 +298,7 @@
 			</a>
 			</h4>
 		<div class="Description of the paper">
-		In my Intro to Environmental Science and Policy course a required assignment was to write a policy memo concerning a topic of our choice to a potential supervisor that we may have in the future. Given my interest in the impacts of climate change on EJ communities in Alaska, as well as the implications of melting sea ice in this area, I chose to write to the Governor of Alaska. In this paper, I improved on my ability to convey scientific and political points in a cohesive manner.
+		In my Intro to Environmental Science and Policy course, a required assignment was to write a policy memo concerning a topic of our choice to a potential supervisor that we may have in the future. Given my interest in the impacts of climate change on EJ communities in Alaska, as well as the implications of melting sea ice in this area, I chose to write to the Governor of Alaska. In this paper, I improved on my ability to convey scientific and political points in a cohesive manner.
 		</div>
 		</div>
 		
@@ -251,8 +309,7 @@
 			</a>
 			</h4>
 		<div class="Description of the paper">
-		As a part of my major, I was required to complete an internship and then write a research paper relating to my experience. During my time at MDE, I had the opportunity to observe the NEPA process for numerous projects. The process of EIS’s was one of interest to me. 
-		Given this and the local impacts and implications, I chose to analyze the Purple Line project. This paper challenged me to pursue a different style of writing, one that was more analytical and academic. In my future I look forward to utilizing this writing style to pursue other research topics in the field of environmental science and policy.
+		As a part of my major, I was required to complete an internship and then write a research paper relating to my experience. During my time at MDE, I had the opportunity to observe the NEPA process for numerous projects. The process of environmental impact statements was one of interest to me. Given this and the local impacts and implications, I chose to analyze the Purple Line project. This paper challenged me to pursue a different style of writing, one that was more analytical and academic. In my future I look forward to utilizing this writing style to pursue other research topics in the field of environmental science and policy.
 		</div>
 		</div>
 		
@@ -262,7 +319,7 @@
 
 	
 <!--Listing contact information-->
-	<div>
+	<div class="Contact-section">
 	
 		<h2 id="Contact-heading">Contact Me</h2>
 		
@@ -272,12 +329,16 @@
 				Phone: (443)-601-5901
 			</p>
 			
+			<a href="https://www.linkedin.com/in/victoria-westerman">LinkedIn</a> 
 	</div>
 	
-<!--Adding LinkedIn Logo to my page-->
+
+
 	
-	<a href="https://www.linkedin.com/in/victoria-westerman">LinkedIn</a> 
 	
+	
+	
+	<script src="script.js"></script>
 	
 </body>
 
