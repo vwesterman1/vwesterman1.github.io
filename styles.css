@@ -56,10 +56,19 @@ html {
 }
 	
 #Name-title {
-	font-size: 150%;
+    background-color: transparent;
+    float: left;
+	font-size: 175%;
 	margin-right: 200px;
 	font-weight: bold;
-	color: #A3D197;
+}
+
+#Name-title a {
+    display: block;
+	color: #BFE7B5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 #Backgroundimg {
@@ -82,7 +91,7 @@ html {
 	display: block;
 	margin-left: 42%;
 	margin-right: auto;
-	margin-top: 5%;
+	margin-top: 10%;
 	width: 16%;
 	height: 32%;
 	border-radius: 50%;
@@ -98,7 +107,20 @@ html {
 	color: white;
 	font-size: 65px;
 	font-weight: bold;
+	margin-top: 80px;
 }
+
+#Top-description {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 25px;
+	margin-top: 150px;
+	text-align: center;
+}
+
 
 {
 	box-sizing: border-box;
@@ -129,6 +151,7 @@ html {
 	border-radius: 50%;
 	border: 8px solid #FFFFFF;
 	margin: auto;
+	margin-bottom: 15px;
 }
 
 .All-Skills {
@@ -141,7 +164,7 @@ html {
 .Skills-container {
 	display: grid;
 	grid-template-columns: 20% 20% 20%;
-	grid-template-rows: 375px 475px;
+	grid-template-rows: 450px 525px;
 	grid-row-gap: 20px;
 	grid-column-gap: 45px;
 	justify-content: center;
@@ -184,10 +207,9 @@ div.Description {
 .Projects-container {
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
-	grid-template-rows: 550px 450px;
+	grid-template-rows: 725px 550px;
 	grid-row-gap: 20px;
 	grid-column-gap:20px;
-	align-items: center;
 	justify-content: center;
 }
 
@@ -266,4 +288,42 @@ ul.Uni {
 	padding-top: 50px;
 	padding-bottom: 65px;
 	text-align: center;
+	line-height: 1.5;
 }
+
+#icons-container {
+	text-align: center;
+}
+
+#LinkedIn {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#GitHub {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.Paper-title:visited {
+	color: #BFE7B5;
+}
+
+.Paper-title:link  {
+	color: #BFE7B5;
+}
+
+.Paper-1 {
+	margin-bottom: 10px;
+}
+
+.Paper-2 {
+	margin-bottom: 10px;
+}
+
+.Paper-3 {
+	margin-bottom: 10px;
+}
+
+
+	
