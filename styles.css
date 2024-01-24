@@ -115,7 +115,7 @@ html {
     display: block;
 	color: #BFE7B5;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 35px;
     text-decoration: none;
 }
 
@@ -137,7 +137,7 @@ html {
 #ProfHeadshot {
 	position: absolute;
 	display: block;
-	margin-left: 42%;
+	margin-left: 44%;
 	margin-right: auto;
 	margin-top: 10%;
 	width: 200px;
@@ -183,7 +183,7 @@ html {
 	color: white;
 	font-size: 25px;
 	font-weight: bold;
-	margin-top: 135px;
+	margin-top: 145px;
 	min-width: 1000px;
 	width: auto !important;
 	width: 1000px;
